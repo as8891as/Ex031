@@ -19,15 +19,23 @@ public abstract class Employee {
         return baseSalary;
     }
 
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public abstract double calculateMonthlySalary();
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "{" +
                 "employeeId=" + employeeId +
                 ", name='" + name + '\'' +
                 ", baseSalary=" + baseSalary +
