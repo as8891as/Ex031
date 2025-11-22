@@ -30,4 +30,9 @@ public class HourlyEmployee extends Employee {
     public double calculateMonthlySalary() {
         return hoursWorked*hourlyRate;
     }
+
+    @Override
+    public String toString() {
+        return "HourlyEmployee - " + super.toString();
+    }
 }
